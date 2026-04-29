@@ -85,9 +85,9 @@
     "rss": "https://blog.phalcon.io/rss"
   },
   "scripts": {
-    "analyze": "php -d extension=ext/modules/phalcon.so ./vendor/bin/psalm --no-cache",
-    "cs": "php -d extension=ext/modules/phalcon.so ./vendor/bin/phpcs --standard=phpcs.xml",
-    "cs-fix": "php -d extension=ext/modules/phalcon.so ./vendor/bin/phpcbf --standard=phpcs.xml",
+    "analyze": "./vendor/bin/psalm --no-cache",
+    "cs": "./vendor/bin/phpcs --standard=phpcs.xml",
+    "cs-fix": "./vendor/bin/phpcbf --standard=phpcs.xml",
     "test-unit": "php -d extension=ext/modules/phalcon.so vendor/bin/phpunit -c phpunit.xml.dist",
     "test-unit-debug": "php -d extension=ext/modules/phalcon.so vendor/bin/phpunit -c phpunit.xml.dist --fail-on-all-issues --display-all-issues",
     "test-unit-coverage": "php -d extension=ext/modules/phalcon.so vendor/bin/phpunit  -c phpunit.xml.dist --coverage-clover tests/_output/coverage.xml",
