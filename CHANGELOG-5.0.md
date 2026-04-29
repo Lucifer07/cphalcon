@@ -1,4 +1,16 @@
 # Changelog
+## 5.12.1 (2026-04-29)
+
+### Changed
+
+### Added
+
+### Fixed
+
+- Fixed PHQL parser cache to use string-keyed lookups (`zend_hash_str_find`/`zend_hash_str_update`) instead of integer keys derived from `zend_inline_hash_func`, eliminating hash collisions that caused different PHQL queries to return identical cached ASTs [#14791](https://github.com/phalcon/cphalcon/issues/14791)
+
+### Removed
+
 ## 5.12.0 (2026-04-29)
 
 ### Changed
